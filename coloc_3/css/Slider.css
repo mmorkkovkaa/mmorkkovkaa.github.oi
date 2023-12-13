@@ -1,0 +1,115 @@
+/*javascriptpro_*/
+
+.container {
+  height: 450px;
+  overflow: hidden;
+  /* position: absolute; */
+  border-radius: 3px;
+  box-shadow: 0 0 13px rgb(255, 46, 147);
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.container .images {
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.container .images img {
+  height: 100%;
+  width: 100%;
+  transition: all 0.2s;
+  border-radius: 3px;
+}
+
+.container .images img.inactive {
+  display: none;
+}
+
+.container .images img.active {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container .btn-sliders {
+  height: 40px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute; */
+}
+
+.container .btn-sliders span {
+  height: 10px;
+  width: 10px;
+  background: lightgrey;
+  border-radius: 100%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.container .btn {
+  height: 45px;
+  width: 45px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  /* position: absolute; */
+
+  cursor: pointer;
+}
+
+.container .slide-right {
+  right: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    height: 250px;
+    width: 300px;
+  }
+
+  .container .btn-sliders {
+    display: none;
+  }
+
+  .container .btn {
+    display: none;
+  }
+}
+
+/* Планшеты в вертикальной ориентации (ширина экрана от 577px до 768px) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .container {
+    height: 300px;
+  }
+}
+
+/* Планшеты в горизонтальной ориентации и небольшие ноутбуки (ширина экрана от 769px до 992px) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .container {
+    height: 300px;
+  }
+}
+
+/* Большие ноутбуки и компьютеры (ширина экрана от 993px до 1200px) */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .container {
+    height: 320px;
+  }
+}

@@ -1,0 +1,429 @@
+header {
+  background-color: #ff69b4;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 15px;
+  font-size: 18px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 6px;
+  border-radius: 11px;
+}
+
+nav a:hover {
+  background-color: #d94093;
+}
+
+.about_me_inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /*max-width: 800px;*/
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.text-container {
+  flex: 1;
+  border-radius: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: white;
+  margin-right: 30px;
+}
+
+.text-container p {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fd3e87;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 18px;
+}
+.text-container h2 {
+  font-size: 35px;
+  border-radius: 8px;
+  margin-bottom: -5px;
+  margin-left: 5px;
+  text-shadow: 0 0 13px rgb(255, 46, 147);
+}
+
+.image-container img {
+  max-width: 100%;
+  height: 400px;
+  width: 400px;
+  border-radius: 8px;
+}
+
+/* HANGMAN */
+.text_area {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.text_area h1 {
+  font-size: 44px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  text-align: center;
+  text-shadow: 0 0 13px rgb(255, 46, 147);
+}
+
+.text_area p {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 105, 180);
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 20px;
+}
+
+/* FOOTER */
+.footer {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 105, 180);
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content p {
+  margin-left: 20px;
+}
+
+.social-links {
+  margin-right: 20px;
+}
+
+.social-links a {
+  margin: 0 5px;
+}
+
+.social-links img {
+  width: 20px;
+  height: 20px;
+}
+
+.game-cards {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-left: 150px;
+  margin-bottom: 80px;
+}
+
+.card {
+  text-align: center;
+  padding: 18px;
+  /* border-radius: 8px;
+  background-color: #ffffff;*/
+  border-radius: 8px;
+  box-shadow: 0 0 13px rgb(255, 60, 154);
+  height: 160px;
+  width: 200px;
+  background-color: #fd3e87;
+}
+.card h3 {
+  font-size: 18px;
+}
+.card img {
+  width: 170px;
+  height: 130px;
+  box-shadow: 0 0 13px rgb(255, 60, 154);
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(0, 0, 0);
+
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 0 13px rgb(255, 60, 154);
+  transition: background-color 0.3s ease;
+  transition: transform 0.2s;
+}
+
+button a {
+  text-decoration: none;
+  color: #fd3e87;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #ff2478;
+  color: aliceblue;
+}
+
+button a:hover {
+  color: aliceblue;
+}
+
+.main-block {
+  display: block;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.inner-block {
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.inner-block img {
+  width: 300px;
+  height: 200px;
+  margin-right: 10px; /* Adjust as needed */
+}
+
+.text-block {
+  flex: 1;
+}
+
+.slider_block {
+  margin-top: 165px;
+  margin-bottom: 50px;
+}
+.slider_block .container {
+  height: 450px;
+}
+
+.slider_block .perechen h2 {
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 0 0 13px rgb(255, 46, 147);
+}
+
+.slider_block .perechen li {
+  font-size: 18px;
+}
+.slider_block button {
+  margin-left: 450px;
+}
+
+.container_1 .imagess img {
+  width: 563px;
+  height: 314px;
+  box-shadow: 0 0 13px rgb(255, 46, 147);
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.781);
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  max-height: 90%;
+}
+
+.close-modal {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  cursor: pointer;
+}
+
+/* Адаптивная вёрстка */
+
+@media screen and (max-width: 1200px) {
+  /* Уменьшение размера шапки */
+  header {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  /* Сжатие блока "Обо мне" */
+  .about_me_inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .text-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  /* Уменьшение размера блока "Игровые карточки" */
+  .game-cards {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  /* Уменьшение размера блока "Слайдер" */
+  .slider_block button {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Дополнительная адаптация для мобильных устройств */
+
+  header {
+    margin-top: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin-bottom: 5px;
+  }
+
+  .about_me_inner {
+    padding: 10px;
+  }
+
+  .text-container {
+    margin-right: 0;
+  }
+
+  .image-container img {
+    height: auto;
+    width: 100%;
+  }
+
+  .game-cards {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .slider_block button {
+    margin-left: 0;
+  }
+
+  .slider_block .container {
+    height: auto;
+  }
+
+  .slider_block .perechen h2 {
+    font-size: 24px;
+  }
+
+  .slider_block .perechen li {
+    font-size: 16px;
+  }
+
+  .container_1 .imagess img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    margin-top: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin-bottom: 5px;
+  }
+
+  .about_me_inner {
+    padding: 10px;
+  }
+
+  .text-container {
+    margin-right: 0;
+  }
+
+  .image-container img {
+    height: auto;
+    width: 100%;
+  }
+
+  .game-cards {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .card button {
+    margin-top: 12px;
+  }
+
+  .slider_block button {
+    margin-left: 0;
+  }
+
+  .slider_block .container {
+    height: auto;
+  }
+
+  .slider_block .perechen h2 {
+    font-size: 24px;
+  }
+
+  .slider_block .perechen li {
+    font-size: 16px;
+  }
+
+  .container_1 .imagess img {
+    width: 100%;
+    height: auto;
+  }
+
+  .inner-block {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .inner-block img {
+    display: none;
+  }
+}

@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.container {
+  height: 280px;
+  width: 330px;
+  background: white;
+  position: absolute;
+  border-radius: 7px;
+  margin-left: 390px;
+  margin-top: 30px;
+  box-shadow: 0 0 13px rgb(255, 46, 147);
+}
+
+.container .btns {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer {
+  position: relative;
+  margin-top: 360px;
+}
+.container .btns div {
+  height: 80px;
+  width: 80px;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 10px;
+  position: relative;
+  left: 25px;
+}
+
+.container .btns div i {
+  font-size: 33px;
+  color: #ff006a;
+  margin-top: 5px;
+}
+
+.container .btns div p {
+  font-size: 11px;
+  position: relative;
+  top: 4px;
+  color: #ff0d7e;
+}
+
+.container .choices {
+  height: 130px;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.container .choices div {
+  font-size: 75px;
+  color: #ff0d7e;
+}
+
+.container .choices div:nth-child(1) {
+  transform: rotate(90deg);
+  transition: all 0.2s;
+}
+
+.container .choices div:nth-child(2) {
+  transform: rotate(270deg) scaleX(-1);
+  position: absolute;
+  right: 30px;
+  transition: all 0.2s;
+}
+
+.container .choices .user-choice .fa-hand-scissors {
+  transform: rotate(-270deg) scaleY(-1);
+}
+
+.container .choices .computer-choice .fa-hand-scissors {
+  transform: rotate(-80deg) scaleX(-1);
+}
+
+.container .choices h4 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  margin-top: 150px;
+}
+
+.container .choices .user-choice.user-icon-animate {
+  animation: userIcon 2s linear infinite;
+}
+
+.container .choices .computer-choice.computer-icon-animate {
+  animation: computerIcon 2s linear infinite;
+}
+
+@keyframes userIcon {
+  0% {
+    transform: rotate(50deg);
+  }
+  50% {
+    transform: rotate(125deg);
+  }
+  100% {
+    transform: rotate(50deg);
+  }
+}
+
+@keyframes computerIcon {
+  0% {
+    transform: rotate(-50deg) scaleX(-1);
+  }
+  50% {
+    transform: rotate(-125deg) scaleX(-1);
+  }
+  100% {
+    transform: rotate(-50deg) scaleX(-1);
+  }
+}
+
+::selection {
+  color: white;
+  background: #9370db;
+}
+
+/* Адаптивные стили */
+
+/* Мобильные устройства (ширина экрана до 576px) */
+@media screen and (max-width: 576px) {
+  .container {
+    box-sizing: border-box;
+    margin-left: auto;
+  }
+
+  .container .btns {
+    margin-top: 10px;
+    position: relative;
+  }
+
+  .container .btns div {
+    height: 60px;
+    width: 60px;
+    margin-left: 35px;
+    left: 0;
+  }
+
+  .container .choices {
+    padding: 23px;
+  }
+
+  .container .choices div {
+    font-size: 40px;
+  }
+
+  .container .choices h4 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .container {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .container {
+    margin-left: auto;
+
+    box-sizing: border-box;
+  }
+}
+/* Планшеты и небольшие настольные компьютеры (ширина экрана от 769px до 992px) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .container {
+    margin-left: auto;
+
+    box-sizing: border-box;
+  }
+}

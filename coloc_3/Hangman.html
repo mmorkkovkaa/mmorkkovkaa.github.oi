@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/Hangman.css" />
+    <link rel="stylesheet" href="css/css.css" />
+    <link rel="stylesheet" href="css/core.css" />
+    <title>Hangman</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="backround_img">
+        <div class="container_1">
+          <header>
+            <nav>
+              <a href="index.html">Main</a>
+              <a href="Hangman.html">Game 1</a>
+              <a href="MemoryGame.html">Game 2</a>
+              <a href="Game.html">Game 3</a>
+              <a href="Slider.html">My Skills</a>
+              <a href="bio.html">About me</a>
+            </nav>
+          </header>
+        </div>
+        <div class="container_1">
+          <div class="text_area">
+            <h1>Hangman</h1>
+            <p>
+              Игра "Виселица" — это весёлая игра, в которой программа загадывает
+              слово и рисует пустую галерею, представляющую собой виселицу.
+              Другой игрок должен угадать слово, предлагая буквы. Если буква
+              есть в слове, она добавляется на свое место, если нет — рисуется
+              часть тела повешенного на виселице. Игрок продолжаетпредлагать
+              буквы до тех пор, пока не угадает слово или не нарисует полное
+              изображение повешенного.
+            </p>
+          </div>
+        </div>
+        <div class="container_1">
+          <div class="container">
+            <span class="wrong-guesses"
+              >Wrong Guesses :
+              <span class="mistake" style="font-weight: 600">0</span> of
+              <span class="max-wrong" style="font-weight: 600"></span
+            ></span>
+            <button class="reset-btn" onclick="reset()">Reset</button>
+            <div class="hangman-body">
+              <span class="base"></span>
+              <!--Base-->
+              <span class="pillar"></span>
+              <!--Pillar-->
+              <span></span>
+              <span></span>
+              <span class="face"></span>
+              <!--Face-->
+              <span class="stomach"></span>
+              <!--Stomach-->
+              <span class="hand-one"></span>
+              <!--Hand-->
+              <span class="hand-two"></span>
+              <!--Hand-->
+              <span id="leg-one"></span>
+              <!--Legs-->
+              <span id="leg-two"></span>
+              <!--Legs-->
+            </div>
+
+            <div class="guess-word">
+              <p>Guess the fruit name</p>
+              <span class="wordSpotlight"></span>
+            </div>
+            <div class="keyboard-box"></div>
+          </div>
+
+          <div class="result-box">
+            <h1 class="message">You Win!</h1>
+            <span
+              >The word was <span class="result-answer">Javascript</span></span
+            >
+            <button class="new game-btn" onclick="newGame()">NEW GAME</button>
+          </div>
+        </div>
+
+        <footer>
+          <div class="footer">
+            <div class="footer-content">
+              <p>&copy; 2023 Ksenia Kashirskaya</p>
+              <div class="social-links">
+                <a href="#" target="_blank"
+                  ><img src="images/facebook.png" alt="Facebook"
+                /></a>
+                <a href="#" target="_blank"
+                  ><img src="images/twitter.png" alt="Twitter"
+                /></a>
+                <a href="#" target="_blank"
+                  ><img src="images/insagram.png" alt="Instagram"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="Hangman.js"></script>
+  </body>
+</html>
